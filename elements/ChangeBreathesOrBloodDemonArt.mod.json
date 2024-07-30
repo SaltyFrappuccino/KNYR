@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Change Breathes Or Blood Demon Art",
+    "keyBindingCategoryKey": "knyr",
+    "onKeyPressed": {
+      "name": "ChangeBreathesOrBloodDemonArtPressed"
+    }
+  }
+}

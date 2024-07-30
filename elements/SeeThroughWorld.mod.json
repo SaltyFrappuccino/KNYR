@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Transperent World",
+    "keyBindingCategoryKey": "knyr",
+    "onKeyPressed": {
+      "name": "SeeThroughWorldPressed"
+    }
+  }
+}

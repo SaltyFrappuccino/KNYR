@@ -1,0 +1,23 @@
+{
+  "_fv": 33,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Transparent World",
+    "icon": "slashing_moon10.png",
+    "color": {
+      "value": -3368449,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "TransparentWorldPerTick"
+    },
+    "onExpired": {
+      "name": "TransparentWorldEffectEnded"
+    }
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "mod_elements": [
+    {
+      "name": "ReturnSkillForUI",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_skill_for_ui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UI Overlay"
+    },
+    {
+      "name": "SkillUI",
+      "type": "overlay",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_ui",
+      "path": "~/UI Overlay"
+    },
+    {
+      "name": "KnyrShowSkillUI",
+      "type": "gamerule",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrShowSkillUI",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/UI Overlay"
+    },
+    {
+      "name": "ReturnIfSkill",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_if_skill",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UI Overlay"
+    },
+    {
+      "name": "TransparentWorld",
+      "type": "potioneffect",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_world",
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "TransparentWorldPerTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_world_per_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "KnyrTransparentWorld",
+      "type": "gamerule",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrTransparentWorld",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "TransparentWorldDodge",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_world_dodge",
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "KnyrShowDamage",
+      "type": "gamerule",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrShowDamage",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/Show Damage"
+    },
+    {
+      "name": "ShowDamage",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Show Damage"
+    },
+    {
+      "name": "ChangeBreathesOrBloodDemonArt",
+      "type": "keybind",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_breathes_or_blood_demon_art",
+      "path": "~/R Keybind"
+    },
+    {
+      "name": "ChangeBreathesOrBloodDemonArtPressed",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_breathes_or_blood_demon_art_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/R Keybind"
+    },
+    {
+      "name": "SeeThroughWorld",
+      "type": "keybind",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "see_through_world",
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "SeeThroughWorldPressed",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "see_through_world_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "TransparentWorldCooldown",
+      "type": "potioneffect",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_world_cooldown",
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "TransparentWorldEffectEnded",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transparent_world_effect_ended",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Transparent World"
+    },
+    {
+      "name": "KnyrSaveOniLevel",
+      "type": "gamerule",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrSaveOniLevel",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/Save Oni Level"
+    },
+    {
+      "name": "OnPlayerDeath",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/UI Overlay"
+    },
+    {
+      "name": "OnPlayerRespawnSaveOniLevel",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_respawn_save_oni_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Save Oni Level"
+    },
+    {
+      "name": "KnyrSpecialBlood",
+      "type": "gamerule",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrSpecialBlood",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/Special Blood"
+    },
+    {
+      "name": "KnyrSpecialBloodChance",
+      "type": "gamerule",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrSpecialBloodChance",
+      "metadata": {
+        "type": "number"
+      },
+      "path": "~/Special Blood"
+    },
+    {
+      "name": "SpecialBloodOnEntitySpawns",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_blood_on_entity_spawns",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Special Blood"
+    },
+    {
+      "name": "SpecialBloodOnPlayerRespawns",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_blood_on_player_respawns",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Special Blood"
+    },
+    {
+      "name": "SpecialBloodEntityAttacked",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_blood_entity_attacked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Special Blood"
+    },
+    {
+      "name": "KnyrSendSkillsInChat",
+      "type": "gamerule",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knyrSendSkillsInChat",
+      "metadata": {
+        "type": "logic"
+      },
+      "path": "~/Breathes in chat"
+    },
+    {
+      "name": "SendSkillsInChat",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_skills_in_chat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Save Oni Level"
+    },
+    {
+      "name": "Debug",
+      "type": "command",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "path": "~/Save Oni Level"
+    },
+    {
+      "name": "Feen",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Save Oni Level"
+    },
+    {
+      "name": "PlayerSaveLevelsOnDeath",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_save_levels_on_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Save Oni Level"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "skill",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "oni_level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "key.kimetsunoyaiba_reload.see_through_world": "Transperent World",
+      "gamerule.knyrSendSkillsInChat": "Send Skills in Chat",
+      "gamerule.knyrShowSkillUI.description": "Toggle UI for skill naming",
+      "effect.transparent_world": "Transparent World",
+      "gamerule.knyrTransparentWorld": "Transparent World",
+      "gamerule.knyrShowSkillUI": "Show Skill UI",
+      "effect.transparent_world_cooldown": "Transparent World Cooldown",
+      "gamerule.knyrShowDamage.description": "Show Damage in chat",
+      "gamerule.knyrSpecialBloodChance.description": "Chance of getting Special Blood from 0 to 1000",
+      "gamerule.knyrSpecialBlood": "Special Blood",
+      "gamerule.knyrSpecialBloodChance": "Special Blood Chance",
+      "gamerule.knyrSaveOniLevel.description": "Save ur demon level after death",
+      "key.knyr.change_breathes_or_blood_demon_art": "Change Breathes Or Blood Demon Art",
+      "gamerule.knyrTransparentWorld.description": "Enable/Disable Transparent World",
+      "gamerule.knyrShowDamage": "Show Damage",
+      "gamerule.knyrSpecialBlood.description": "Enable/Disable Special Blood",
+      "gamerule.knyrSendSkillsInChat.description": "Send in chat when someone using skill",
+      "key.kimetsunoyaiba_reload.change_breathes_or_blood_demon_art": "Change Breathes Or Blood Demon Art",
+      "gamerule.knyrSaveOniLevel": "Save Oni Level",
+      "key.knyr.see_through_world": "Transperent World"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "UI Overlay",
+        "children": []
+      },
+      {
+        "name": "Transparent World",
+        "children": []
+      },
+      {
+        "name": "Show Damage",
+        "children": []
+      },
+      {
+        "name": "R Keybind",
+        "children": []
+      },
+      {
+        "name": "Save Oni Level",
+        "children": []
+      },
+      {
+        "name": "Special Blood",
+        "children": []
+      },
+      {
+        "name": "Breathes in chat",
+        "children": []
+      },
+      {
+        "name": "Air Combat",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "knyr",
+    "modName": "Kimetsu No Yaiba Reload",
+    "version": "1.2.0",
+    "description": "Add staff",
+    "author": "SaltyFrappuchino",
+    "websiteURL": "https://discord.gg/BTu5FYbrS8",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [
+      "kimetsunoyaiba"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "demonslayer"
+    ],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Made by Salty",
+    "modElementsPackage": "net.mcreator.kimetsunoyaibareload",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
